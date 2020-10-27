@@ -204,8 +204,7 @@ def compute_accuracies(model, d, screen_names, X_train, X_dev, Y_train, Y_dev):
     tot=[0]*U
     est=[1]*U#Laplace smothing
 
-    #acc=[0]*U#over the total number
-    #precision=[0]*U#over the total estimate
+
     for i in range(len(y_pred)):
         tot[Y_train[i]]=tot[Y_train[i]]+1
         est[y_pred[i]]=est[y_pred[i]]+1
@@ -250,8 +249,7 @@ def compute_accuracies(model, d, screen_names, X_train, X_dev, Y_train, Y_dev):
     tot=[0]*U
     est=[1]*U#Laplace smothing
 
-    #acc=[0]*U#over the total number
-    #precision=[0]*U#over the total estimate
+
     for i in range(len(y_pred)):
         tot[Y_dev[i]]=tot[Y_dev[i]]+1
         est[y_pred[i]]=est[y_pred[i]]+1
